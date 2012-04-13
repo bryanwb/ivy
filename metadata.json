@@ -1,0 +1,36 @@
+{
+  "name": "ivy",
+  "description": "Installs/Configures ivy",
+  "long_description": "Description\n===========\n\ninstalls apache ivy and provides and lwrp for downloading jars and\ntheir dependencies from ivy and maven repositories\n\n## License and Author\n\nAuthor:: Bryan W. Berry (<bryan.berry@gmail.com>)\nCopyright::             2011, Bryan W. Berry\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+  "maintainer": "Bryan W. Berry",
+  "maintainer_email": "bryan.berry@gmail.com",
+  "license": "Apache 2.0",
+  "platforms": {
+    "debian": ">= 0.0.0",
+    "ubuntu": ">= 0.0.0",
+    "centos": ">= 0.0.0",
+    "redhat": ">= 0.0.0",
+    "fedora": ">= 0.0.0"
+  },
+  "dependencies": {
+    "java": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "ivy::default": "Installs and configures ivy"
+  },
+  "version": "0.0.1"
+}
