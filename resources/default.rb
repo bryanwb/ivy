@@ -20,8 +20,8 @@
 
 actions :install
 
-attribute :artifactId, :kind_of => String
-attribute :groupId, :kind_of => String, :required => true
+attribute :artifact_id, :kind_of => String
+attribute :group_id, :kind_of => String, :required => true
 attribute :version, :kind_of => String, :required => true
 attribute :dest, :kind_of => String
 attribute :dest_attr, :kind_of => String
@@ -31,6 +31,6 @@ attribute :mode, :kind_of => [String, Integer], :default => "0755"
 def initialize(*args)
   super
   # we can't use the node properties when initially specifying the resource
-  @artifactId ||= @name
+  @artifact_id ||= @name
   @action = :install
 end

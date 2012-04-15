@@ -10,8 +10,8 @@ repositories to pull jars from
 Providers/Resources
 ===================
 
-* artifactId: if this is not specified, the resource's name is used
-* groupId: groupId for the artifact
+* artifact_id: if this is not specified, the resource's name is used
+* group_id: groupId for the artifact
 * version: version of the artifact
 * dest: the destination folder for the jar and its dependencies
 * dest_attr: This is funky, use a node attribute optionally with subdirectory
@@ -22,13 +22,13 @@ Providers/Resources
 # Examples
 
     ivy "mysql-connector-java" do
-      groupId "mysql"
+      group_id "mysql"
       version "5.1.18"
       dest "/usr/local/tomcat/lib/"
     end
 
     ivy "mysql-connector-java" do
-      groupId "mysql"
+      group_id "mysql"
       version "5.1.18"
       dest_attr "tomcat_base/lib"
     end

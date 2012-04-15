@@ -19,9 +19,9 @@
 #
 
 action :install do
-  full_name = [ new_resource.groupId, new_resource.artifactId, new_resource.version ].join(' ')
+  full_name = [ new_resource.group_id, new_resource.artifact_id, new_resource.version ].join(' ')
   # use a glob because file can have different extensions
-  file_glob = "#{new_resource.artifactId}-#{new_resource.version}\.*"
+  file_glob = "#{new_resource.artifact_id}-#{new_resource.version}\.*"
   dest = new_resource.dest
   Chef::Log.debug("dest is #{dest}")
   dest_pattern = "#{dest}/[artifact]-[revision].[ext]"
